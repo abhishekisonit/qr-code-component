@@ -1,0 +1,51 @@
+:root {
+  --image-width: 17.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*Should have removed default margins as well*/
+
+body {
+  display: grid;
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  background-color: #d5e1ef;
+  place-content: center;
+}
+
+.container {
+  width: fit-content;
+  margin-inline: auto;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+.container img {
+  aspect-ratio: 1;
+  width: var(--image-width);
+  border-radius: 0.5rem;
+}
+
+.container p,
+.container h3 {
+  text-align: center;
+  width: var(--image-width);
+}
+
+.container h3 {
+  font-size: 1.5rem;
+}
+
+.container p {
+  opacity: 0.5;
+}
